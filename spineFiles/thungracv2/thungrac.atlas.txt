@@ -1,0 +1,13 @@
+thungrac.png
+size:580,446
+filter:Linear,Linear
+pma:true
+mat trong thung rac
+bounds:412,224,220,166
+offsets:0,5,220,176
+rotate:90
+nap 2
+bounds:412,2,220,132
+rotate:90
+thung rac
+bounds:2,20,408,424
