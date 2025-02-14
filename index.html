@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>D 3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<script src="https://unpkg.com/@esotericsoftware/spine-player@4.1.*/dist/iife/spine-player.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/@esotericsoftware/spine-player@4.1.*/dist/spine-player.css">
+
+	<!-- <script src="https://unpkg.com/@esotericsoftware/spine-player@4.2.70/dist/iife/spine-player.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/@esotericsoftware/spine-player@4.2.70/dist/spine-player.css"> -->
+</head>
+
+<body style="margin: 0;">
+	<div id="player-container" style="width: 100%; height: 100vh;"></div>
+</body>
+
+<script>
+	new spine.SpinePlayer("player-container", {
+		jsonUrl: "https://sgxdev2024.github.io/spineFiles/donrac_exp_v3/donrac.json",
+		atlasUrl: "https://sgxdev2024.github.io/spineFiles/donrac_exp_v3/donrac.atlas",
+		// animation: "animation name",
+		// success: function (player) {
+		// },
+		showControls: true,
+		premultipliedAlpha: false,
+		alpha: true, // Enable player translucency
+		// showLoading: true,
+		debug: {
+			// bones: true,
+			// regions: true,
+			// meshes: true,
+			// bounds: true,
+			// paths: true,
+			// clipping: true,
+			// points: true,
+			// hulls: true
+		},
+		viewport: {
+			// x: 0,
+			// y: 0,
+			// width: 300,
+			// height: 300,
+			padLeft: "0%",
+			padRight: "0%",
+			padTop: "0%",
+			padBottom: "0%"
+		},
+		debugRender: false,
+		backgroundColor: "white" // Background is fully transparent
+	});
+</script>
+
+</html>
